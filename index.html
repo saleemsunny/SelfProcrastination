@@ -1,0 +1,617 @@
+		<!DOCTYPE html>
+		<html>
+		<head>
+			<link rel="stylesheet" href="QuizCss.css">
+			<script type="text/javascript" src="QuizJs.js"></script>
+			<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+			<link href="https://unpkg.com/nes.css@2.3.0/css/nes.min.css" rel="stylesheet" />
+			<link rel="stylesheet" href="imagecraousal.css">
+			<audio id="sound_tag" src="https://drive.google.com/file/d/1s0iHn4fMd7BzQ08C2QngIRHVtWmrdsxk/view?usp=sharing" preload="auto"></audio>
+			
+		</head>
+		<body onload="NextQuestion(0)">
+			<audio id="welcometothehood">
+				<source src="welcometothehood.mp3" type="audio/ogg">
+					<source src="welcometothehood.mp3" type="audio/mpeg">
+						Your browser does not support the audio element.
+					</audio>
+
+					<audio id="speedthrills">
+						<source src="speedthrills_8lXRGmod.mp3" type="audio/ogg">
+							<source src="speedthrills_8lXRGmod.mp3" type="audio/mpeg">
+								Your browser does not support the audio element.
+							</audio>
+							<audio id="seeyouagain">
+								<source src="seeyouagain.mp3" type="audio/ogg">
+									<source src="seeyouagain.mp3" type="audio/mpeg">
+										Your browser does not support the audio element.
+									</audio>
+
+									<audio id="EveryoneProcras">
+										<source src="everyoneprocrastinates.mp3" type="audio/ogg">
+											<source src="everyoneprocrastinates.mp3" type="audio/mpeg">
+												Your browser does not support the audio element.
+											</audio>
+											<section class= is-centered  >
+												<section class="nes-balloon  nes-pointer nes-container ">
+
+
+
+													<section class="nes-container" >
+														<section class="message-list">
+															<section class="message -left">
+																<i class="nes-bcrikko"></i>
+																<!-- Balloon -->
+																<div class="nes-balloon from-left">
+																	<p id="hellotext"> </p>
+																</div>
+															</section>
+
+															<section class="message -right  hangontexthideshow">
+																<!-- Balloon -->
+																<div class="nes-balloon from-right">
+																	<!--  <p>Site under Construction Please come atleast 1 month later</p> -->
+																	<div class="nes-field">
+																		<label for="name_field" id="hangontext"> </label>
+																		<!--<input type="text" id="name_field" class="nes-input">  // input field for text--> 
+																	</div>
+																</div>
+																<i class="nes-bcrikko"></i>
+															</section>
+															<section class="message -left  goodprocrastinatortexthideshow">
+																<i class="nes-bcrikko"></i>
+																<!-- Balloon -->
+																<div class="nes-balloon from-left">
+																	<p id="goodprocrastinatortext"></p>
+																</div>
+															</section>
+
+															<section class="message -right  wonderingtexthideshow">
+																<!-- Balloon -->
+																<div class="nes-balloon from-right>
+																	<div class="nes-field">
+																		<label for="name_field" id="wonderingtext"></label>
+																	</div>
+																</div>
+
+																<i class="nes-bcrikko"></i>
+															</section>
+															<section>
+																<p><button type="button" onclick=" ContinueClickedChecker() ;playAudiowelcome()  "  class="nes-btn is-primary" id = "continue1button">Continue</button><p>
+																	<!--<button onclick="playAudio()" type="button">Play Audio</button>-->
+																	<!--<button onclick="pauseAudio()" type="button">Pause Audio</button> -->
+																</section>
+
+																<section class="message -left  continuetexthideshow">
+																	<i class="nes-bcrikko"></i>
+																	<!-- Balloon -->
+																	<div class="nes-balloon from-left">
+
+																		<p id="continuetext"></p>
+																	</div>
+																</section>
+
+
+																<section class="message -right  WatchVideoTextHideShow">
+																	<i class="nes-bcrikko"></i>
+																	<!-- Balloon -->
+																	<div class="nes-baloon from-right">
+																		<iframe  id="ooanta"src="https://www.youtube.com/embed/YCD1FFUAUOU?autoplay=1&mute=1" width="560" height="315" frameborder="0" ></iframe>
+
+																		<p id="WatchVideoText">Watch the video to increase your procrastination skills</p>
+																	</div>
+
+
+																</section>
+																<p class="recommendedbooks"> Some books for promoting Procrastination , first of its kind in the world</p>
+																<!-- Slideshow container -->
+																<div class="slideshow-container  Books">
+
+																	<!-- Full-width images with number and caption text -->
+																	<div class="mySlides fade">
+																		<div class="numbertext">1 / 3</div>
+																		<img src="FirstSteps.jpg" style="width:60%">
+																		<!--<div class="text">Science of Procrastination</div>-->
+																	</div>
+
+																	<div class="mySlides fade">
+																		<div class="numbertext">2 / 3</div>
+																		<img src="habits.jpg" style="width:60%">
+																		<!--<div class="text">Habits of Straight A students</div>-->
+																	</div>
+
+																	<div class="mySlides fade">
+																		<div class="numbertext">3 / 3</div>
+																		<img src="ScienceOfProcrastination.jpg" style="width:60%">
+																		<!--<div class="text">Starting Procrastination</div>-->
+																	</div>
+
+																	<!-- Next and previous buttons -->
+
+																</div>
+																<br>
+
+																<!-- The dots/circles -->
+																<div style="text-align:center" class="Dots">
+																	<span class="dot" onclick="currentSlide(1)"></span>
+																	<span class="dot" onclick="currentSlide(2)"></span>
+																	<span class="dot" onclick="currentSlide(3)"></span>
+																</div>
+
+
+
+																<p>
+																	<section class="message -left">
+
+																		<!-- Balloon -->
+																		<div class="nes-baloon from-left">
+																			<iframe id="Ye-jism" src="https://www.youtube.com/embed/2KLVb_qBdiI" width="550" height="280" frameborder="0"></iframe>
+
+																			<p id="Nice-addition"> A nice addition to your procrastination skills</p>
+																		</div>
+
+
+																	</section>
+
+																</p>
+
+
+
+																<p class="continue2"><button type="button" onclick=" ContinueClickedChecker() ;playAudioEveryOneProcras()  "  class="nes-btn is-primary" id="continue2button">Continue</button></p>
+
+
+
+
+																<section class="message -left  continuetext2hideshow">
+																	<i class="nes-bcrikko"></i>
+																	<!-- Balloon -->
+																	<div class="nes-balloon from-left">
+
+																		<p id="continuetext2"></p>
+																	</div>
+																</section>
+
+																<dialog class="nes-dialog" id="dialog-default">
+																	<form method="dialog">
+																		<p class="title">Alert</p>
+																		<p id="demo"></p>
+																		<menu class="dialog-menu">
+
+																			<button class="nes-btn is-error"  onclick="SingleAlertAtOnce()">Close</button>
+																		</menu>
+																	</form>
+																</dialog> 
+
+																<section>
+
+
+																	<section>
+
+																		<div class="modal-container" id="score-modal">
+
+																			<div class="modal-content-container">
+
+																				<h1> Quiz Completed.</h1>
+
+																				<div class="grade-details">
+																					<p>Wrong Answers : <span id="wrong-answers"></span></p>
+																					<p>Right Answers : <span id="right-answers"></span></p>
+																					<p>Grade : <span id="grade-percentage"></span>%</p>
+																					<p ><span id="remarks"></span></p>
+																				</div>
+
+																				<div class="modal-button-container">
+																					<button onclick="closeScoreModal()">Close</button>
+																				</div>
+
+																			</div>
+																		</div>
+																		<!-- end of modal of quiz details-->
+
+																		<div class="game-quiz-container">
+
+																			<div class="game-details-container">
+																				<h1>Score : <span id="player-score"></span> / 10</h1>
+																				<h1> Question : <span id="question-number"></span> / 10</h1>
+																			</div>
+
+																			<div class="game-question-container">
+																				<h1 id="display-question"></h1>
+																			</div>
+
+																			<div class="game-options-container">
+
+																				<div class="modal-container  nes-dialog" id="option-modal">
+
+																					<div class="modal-content-container  nes-container is-rounded">
+																						<h1>Please Pick An Option</h1>
+
+																						<div class="modal-button-container">
+																							<button onclick="closeOptionModal()">Continue</button>
+																						</div>
+
+																					</div>
+
+																				</div>
+
+																				<span class="nes-container is-rounded">
+																					<input type="radio" id="option-one" name="option" class="radio" value="optionA"  />
+																					<label for="option-one" class="option" id="option-one-label" style="font-size: 12px"></label>
+																				</span>
+
+
+																				<span class="nes-container is-rounded">
+																					<input type="radio" id="option-two" name="option" class="radio" value="optionB" />
+																					<label for="option-two" class="option" id="option-two-label" style="font-size: 12px"></label>
+																				</span>
+
+
+																				<span class="nes-container is-rounded">
+																					<input type="radio" id="option-three" name="option" class="radio" value="optionC" />
+																					<label for="option-three" class="option" id="option-three-label" style="font-size: 12px"></label>
+																				</span>
+
+
+																				<span class="nes-container is-rounded">
+																					<input type="radio" id="option-four" name="option" class="radio" value="optionD" />
+																					<label for="option-four" class="option" id="option-four-label" style="font-size: 12px"></label>
+																				</span>
+
+
+																			</div>
+
+																			<div class="">
+																				<button onclick="handleNextQuestion()" class="nes-btn is-primary" id="disable-next-question">Next Question</button>
+																			</div>
+
+																		</div>
+
+
+																	</section>
+																</section>
+																<!-- Section for Certificate -->
+																<section id="Cerificate-Of-Completion">
+																	<div style="width:800px; height:600px; padding:20px; text-align:center; border: 10px solid  #7B68EE">
+																		<div style="width:750px; height:550px; padding:20px; text-align:center; border: 5px solid #787878">
+																			<span style="font-size:50px; font-weight:bold">Certificate of Completion</span>
+																			<br><br>
+																			<span style="font-size:25px"><i>This is to certify that</i></span>
+																			<br><br>
+																			<span style="font-size:30px ; color:#7B68EE ; text-shadow: 2px 2px 4px #000000;"><b>You have Successfully</b></span><br/><br/>
+																			<span style="font-size:25px"><i>Wasted</i></span> <br/><br/>
+																			<!--<span style="font-size:30px"></span> <br/><br/>-->
+																			<span style="font-size:20px ; text-shadow: 2px 2px 4px #000000; color: white;" id='seconds-counter'><p></p><b></b></span> <br/><br/>
+																			<span style="font-size:20px" ><i>of your life</i></span><br>
+
+																		</div>
+																	</div>
+																</section>
+
+
+
+
+
+																<span id=""> </span>
+															</section>
+														</section>
+
+														<!--script for calculating time spent on a webpage -->
+														<script type="text/javascript">
+															var seconds = 0;
+															var el = document.getElementById('seconds-counter');
+
+															function incrementSeconds() {
+																seconds += 1;
+																el.innerText = "" + seconds + " seconds";
+															}
+
+															var cancel = setInterval(incrementSeconds, 1000);
+
+															function DisableNextButton()
+															{
+
+
+															}
+
+
+														</script>
+
+
+
+														<script>
+															src="https://code.jquery.com/jquery-3.6.0.min.js"
+
+															integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+															crossorigin="anonymous">
+
+														</script>
+														<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+														<script>
+															var slideIndex = 1;
+															showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+	showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+	showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+	var i;
+	var slides = document.getElementsByClassName("mySlides");
+	var dots = document.getElementsByClassName("dot");
+	if (n > slides.length) {slideIndex = 1}
+		if (n < 1) {slideIndex = slides.length}
+			for (i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none";
+			}
+			for (i = 0; i < dots.length; i++) {
+				dots[i].className = dots[i].className.replace(" active", "");
+			}
+			slides[slideIndex-1].style.display = "block";
+			dots[slideIndex-1].className += " active";
+		}
+
+	</script>
+
+	<script>
+
+		document.getElementById("ooanta").height=250;
+		var x= document.getElementById("welcometothehood");
+		var y= document.getElementById("EveryoneProcras");
+		var alertchecker=0;
+
+
+		function playAudiowelcome() { 
+			x.play(); 
+		} 
+
+		function playAudioEveryOneProcras() { 
+			y.play(); 
+		} 
+
+		function pauseAudiowelcome() { 
+			x.pause(); 
+		}
+
+
+		function SingleAlertAtOnce() { 
+			alertchecker=0;
+		} 
+
+
+	</script>
+
+
+	<script>
+
+		var myVar;
+
+
+		$( document ).ready(function() {
+			
+			$('.game-quiz-container').hide();
+			$('.Dots').hide();
+			$("#continue2button").hide();
+			$("#Cerificate-Of-Completion").hide();
+			$('.recommendedbooks').hide();
+			$("#continue1button").hide();
+			$('.hangontexthideshow').hide();
+			$('.wonderingtexthideshow').hide();	
+			$('.goodprocrastinatortexthideshow').hide();
+			$('.Books').hide();
+			$('.continuetexthideshow').hide();
+			$('.WatchVideoTextHideShow').hide();
+			$('.continuetext2hideshow').hide();
+			$("#Ye-jism").hide();
+			$("#Nice-addition").hide();
+			
+			
+
+		//document.getElementById('clip1').style.pointerEvents = 'none';
+		$('#continue-button').hide();
+		myVar=setTimeout(function(){ $('#continue-button').show(); }, 50000);
+			//clearTimeout(myVar);// used to prevent function from running.
+
+
+
+	       // Calculating speed of mouse pointer
+	       var timestamp = 0;
+	       var mY = 0;
+
+	       $(document).mousemove(function(e) {
+	       	var now = Date.now();
+	       	currentmY = e.screenY;
+
+	       	var dt = now - timestamp;
+	       	var distance = Math.abs(currentmY - mY);
+	       	var speed = Math.round(distance / dt * 1000);
+	       	//console.log(dt, distance, speed);
+				//document.getElementById("pointerspeed").innerHTML = speed;// speed is measured in pixels per second
+
+				if(speed>400)
+				{
+					var texts = [];
+
+					texts[0]= "Are you trying to make next fast and furious";
+					texts[1]= "Don't be too fast";
+					texts[2]= "kill your speed";
+					texts[3]= "Do you have any idea how fast you are going?";
+					texts[4]= "Hey , this is my territory now. And you were going 120 in a 30 zone";
+					texts[5]= "I don't need any radar, i can tell! i just listen to the wind; it said,`Seventy-Nine , Nail him!`";
+					
+					var speedthrillaudio= document.getElementById("speedthrills");
+					
+					
+					if(alertchecker==0)
+					{
+						document.getElementById("demo").innerHTML = String(texts[Math.floor((Math.random() * 6) + 0)]);
+						document.getElementById('dialog-default').showModal();
+						alertchecker=1;
+					}
+					speedthrillaudio.play();
+
+					//alert((cars[Math.floor((Math.random() * 2) + 1)]));
+					
+
+	        //  
+
+
+
+				// activate the alert 
+				$('body').mouseover(function(){
+					$(this).css({cursor: 'none'});
+				});
+			}
+
+			mY = currentmY;
+			timestamp = now;
+		});
+
+
+
+
+
+
+
+
+	   });
+	// creating a typing effect
+	var i=0,hellotext;
+	var j=0,hangontext;
+	var k=0,goodprocrastinatortext;
+	var l=0,wonderingtext;
+	var m=0,continuetext;
+	var q= document.getElementById("TypingEffect");
+	var n=0; continuetext2;
+	var continueclicked=0;
+
+
+
+	function ContinueClickedChecker() { 
+
+		continueclicked=continueclicked+1;
+											typing();// calls the typing function again to start typing after pressing the continue button
+											//alert(continueclicked);
+										} 
+										hellotext=" Hello "
+										hangontext ="Hang on.. I have to finish something it will take just a moment ..and ,Done !pheww"
+										goodprocrastinatortext="  I once spent 6 hours reading about how to be a good procrastinator"
+										wonderingtext="May be you are wondering how to be a good Pro (crastinator) ?"
+										continuetext=" Let me check if your procrastination game is strong or not"
+										continuetext2 ='Here is a secret every one Procrastinates .Even my creators did .       "And for a very long time"'
+										function typing()
+										{
+
+											if(i<hellotext.length)
+											{
+
+												document.getElementById("hellotext").innerHTML+= hellotext.charAt(i);
+												i++
+
+												setTimeout(typing,400);
+											}
+
+
+
+		if(j<hangontext.length && i>4)// i>4 when it shows hello after then it is going to show the next line
+		{
+			$('.hangontexthideshow').show();
+			
+
+			document.getElementById("hangontext").innerHTML+= hangontext.charAt(j);
+			j++
+			setTimeout(typing,400);
+		}
+
+
+		if(k<goodprocrastinatortext.length && j>80)// i>4 when it shows hello after then it is going to show the next line
+		{
+
+			$('.goodprocrastinatortexthideshow').show();
+			document.getElementById("goodprocrastinatortext").innerHTML+= goodprocrastinatortext.charAt(k);
+			k++
+			setTimeout(typing,400);
+		}
+
+
+		if(l<wonderingtext.length && k>67)// i>4 when it shows hello after then it is going to show the next line
+		{
+
+
+			$('.wonderingtexthideshow').show();
+			document.getElementById("wonderingtext").innerHTML+= wonderingtext.charAt(l);
+			l++;
+			setTimeout(typing,400);
+
+
+		}
+
+		if(l>60)
+		{
+
+			$("#continue1button").show();
+		}
+
+		if(continueclicked==1)
+		{
+			
+			$("#continue1button").removeClass("is-primary");
+			document.getElementById("continue1button").disabled = true;
+			$('.continuetexthideshow').show();
+
+			document.getElementById("continuetext").innerHTML+= continuetext.charAt(m);
+			m++;
+			setTimeout(typing,400);
+		}
+
+
+
+		if(m>50)
+		{
+			$(".Dots").show();
+			$('#Ye-jism').show();
+			$('#Nice-addition').show();
+			$("#continue2button").show();
+			$('.WatchVideoTextHideShow').show();
+			$('.Books').show();
+			$('.recommendedbooks').show();
+
+		}
+
+		if(continueclicked==2)
+		{
+
+			$("#continue2button").removeClass("is-primary");
+			document.getElementById("continue2button").disabled = true; 
+			$('.continuetext2hideshow').show();
+			document.getElementById("continuetext2").innerHTML+= continuetext2.charAt(n);
+			n++;
+			setTimeout(typing,200);
+		}
+
+		if(n>30)
+		{
+
+			$('.game-quiz-container').show();
+		}
+
+
+
+
+
+	}
+
+	typing();
+
+
+
+
+</script>
+
+</body>
+</html>

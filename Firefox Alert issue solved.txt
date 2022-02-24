@@ -1,0 +1,6 @@
+1) open firefox
+
+
+
+
+2)Enter about:config in the URL bar and set dom.dialog_element.enabled = true.

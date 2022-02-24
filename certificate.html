@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="main.css"/>
+
+</head>
+
+<body>
+  <div style="width:800px; height:600px; padding:20px; text-align:center; border: 10px solid  #7B68EE">
+       <div style="width:750px; height:550px; padding:20px; text-align:center; border: 5px solid #787878">
+       <span style="font-size:50px; font-weight:bold">Certificate of Completion</span>
+       <br><br>
+       <span style="font-size:25px"><i>This is to certify that</i></span>
+       <br><br>
+       <span style="font-size:30px ; color:#7B68EE"><b>Saleem Ahmad</b></span><br/><br/>
+       <span style="font-size:25px"><i>is a Pro(crastinator)</i></span> <br/><br/>
+       <span style="font-size:30px"></span> <br/><br/>
+       <span style="font-size:20px">with score of <b>85</b></span> <br/><br/><br/><br/>
+       <span style="font-size:25px" ><i>dated</i></span><br>
+      
+      <span style="font-size:30px" id="currentdate"></span>
+</div>
+</div>
+  
+</body>
+
+</html>
+
+
+<script type="text/javascript">
+  var d = new Date();
+
+var month = d.getMonth()+1;
+var day = d.getDate();
+
+var output = d.getFullYear() + '/' +
+    ((''+month).length<2 ? '0' : '') + month + '/' +
+    ((''+day).length<2 ? '0' : '') + day;
+
+ document.getElementById("currentdate").innerHTML=output;
+
+
+
+
+
+
+</script>
